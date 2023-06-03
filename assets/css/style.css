@@ -1,0 +1,199 @@
+/*============================== Imports ==================================== */
+/* FONTS */
+/* MONTSERRAT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/*============================== Configurations ==============================*/
+:root {
+    /* COLORS */
+    --athens-Gray: #EFF0F4;
+    --black: #000;
+    --magnolia: #F8F4FF;
+    --silver-chalice: #A3A3A3;
+    --tundora: #464646;
+    --tundora-10: #4545451a;
+    --mercury: #dddddd;
+    --white: #fff;
+    --texas-rose: #FFB050;
+    --gallery: #ECECEC;
+    --dodger-blue: #4894FF;
+
+    /* BACKGROUNDS */
+    --chat-button-background: var(--mercury);
+    --button-call-of-video-background: var(--texas-rose);
+    --button-address-background: var(--dodger-blue);
+
+    /* BORDERS */
+    --hr-border-color: var(--tundora-10);
+    --meeting-box-shadow: var(--black);
+    --audio-call-button-border-color: var(--gallery);
+
+    /* TEXTS */
+    --title-text-color: var(--tundora);
+    --default-text-color: var(--tundora);
+    --detail-text-color: var(--silver-chalice);
+
+    --white-button-text-color: var(--white);
+
+    /* FONTS */
+    --main-font: 'Montserrat', sans-serif;
+
+    /* OTHERS */
+    --meeting-padding: 1rem;
+}
+
+/*============================== Generic Elements ==============================*/
+body {
+    width: 90%;
+
+    margin: auto;
+
+    font-family: var(--main-font);
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+
+    color: var(--title-text-color);
+    font-weight: bold;
+}
+
+/*============================== Generic Classes ==============================*/
+.button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+    .button--video-call {
+        background-color: var(--button-call-of-video-background);
+
+        color: var(--white-button-text-color);
+    }
+
+    .button--audio-call {
+        background-color: transparent;
+
+        border: 1px solid var(--audio-call-button-border-color);
+    }
+
+    .button--address {
+        background-color: var(--button-address-background);
+
+        color: var(--white-button-text-color);
+    }
+
+/*============================== Page - Top to Bottom ==============================*/
+/* MAIN PROFILE */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1.5rem 0;
+}
+
+    .header__profile {
+        width: 5rem;
+        height: 5rem;
+
+        border-radius: 50%;
+    }
+
+    .header__title {
+        margin-bottom: 1rem;
+    }
+
+    .header__today-appointments {
+        color: var(--detail-text-color);
+    }
+
+/* APPOINTMENTS */
+.appointments-day {
+    margin-bottom: 2rem;
+
+    font-size: 1.75rem;
+}
+
+.meeting {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--meeting-box-shadow);
+    padding: var(--meeting-padding);
+}
+
+    .meeting__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+        .meeting__profile {
+            width: 20%;
+
+            border-radius: 50%;
+        }
+
+        .meeting__informations {
+            margin-right: auto;
+        }
+
+            .meeting__informations__client-name {
+                margin-bottom: 0.5rem;
+            }
+
+            .meeting__informations__meet-type {
+                color: var(--detail-text-color);
+            }
+
+        .meeting__chat-button {
+            background-color: var(--chat-button-background);
+
+            width: 50px;
+            height: 45px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: none;
+            border-radius: 50%;
+            padding: 0.5rem;
+        }
+
+            .meeting__chat-button__icon {
+                width: 75%;
+                max-width: 1.25rem;
+            }
+
+    .meeting__row {
+        margin: 1rem calc(var(--meeting-padding) * -1);
+        border-color: var(--hr-border-color);
+    }
+
+    .meeting__time {
+        padding-bottom: 1rem;
+
+        color: var(--default-text-color);
+    }
+
+    .meeting__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+        .meeting__buttons > * {
+            flex-grow: 1;
+        }
+
+/* RESPONSIVE LAYOUTS */
