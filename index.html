@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <!-- NEW APPOINTMENT BACKGROUND -->
+    <div class="new-appointment-background" data-element-id="new-appointment-background"></div>
+
     <!-- MAIN PROFILE -->
     <header class="header">
         <img class="header__profile" src="assets/images/profile-1.jpg" alt="Doctor`s profile">
@@ -25,7 +28,30 @@
         </div>
     </header>
 
-    <main>
+    <main class="main">
+        <!-- NEW APPOINTMENT -->
+        <div class="new-appointment">
+            <button class="button new-appointment__button" data-element-id="new-appointment-button">
+                <img src="assets/images/icons/plus-icon.svg" alt="Plus icon">
+            </button>
+
+            <div class="new-appointment__appointment" data-element-id="new-appointment__appointment--animation">
+                <button class="button new-appointment__button">
+                    <img src="assets/images/icons/new-appointment-camera-icon.svg" alt="Camera icon">
+                </button>
+
+                <p class="new-appointment__text">Nova consulta na casa do paciente</p>
+            </div>
+            
+            <div class="new-appointment__appointment" data-element-id="new-appointment__appointment--animation">
+                <button class="button new-appointment__button">
+                    <img src="assets/images/icons/new-appointment-pin-address-icon.svg" alt="Pin address icon">
+                </button>
+
+                <p class="new-appointment__text">Nova consulta por vídeo</p>
+            </div>
+        </div>
+
         <!-- APPOINTMENTS -->
         <!-- TODAY -->
         <section>
@@ -38,7 +64,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Luciana Dias</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
                     </div>
 
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -63,7 +89,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Larissa Santana</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
                     </div>
 
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -87,7 +113,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Marcos Correia</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
                     </div>
             
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -117,7 +143,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Clara Lemos</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
                     </div>
 
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -141,7 +167,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Luciana Dias</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
                     </div>
             
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -166,7 +192,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Marcos Correia</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
                     </div>
             
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -191,7 +217,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Larissa Santana</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
                     </div>
 
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -220,7 +246,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Clara Lemos</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
                     </div>
 
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -244,7 +270,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Luciana Dias</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
                     </div>
             
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -269,7 +295,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Marcos Correia</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
                     </div>
             
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -294,7 +320,7 @@
                     
                     <div class="meeting__informations">
                         <h3 class="meeting__informations__client-name">Larissa Santana</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
                     </div>
 
                     <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
@@ -312,6 +338,41 @@
             </article>
         </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <nav>
+            <ul class="footer__list">
+                <li>
+                    <a class="footer__link" href="#">
+                        <img src="./assets/images/icons/calendar-icon.svg" alt="Calendar Icon">
+                        <p>Consultas</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__link" href="#">
+                        <img src="./assets/images/icons/clients-icon.svg" alt="People Icon">
+                        <p>Clientes</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__link" href="#">
+                        <img src="./assets/images/icons/reports-icon.svg" alt="Reports Icon">
+                        <p>Relatórios</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__link" href="#">
+                        <img src="./assets/images/icons/menu-icon.svg" alt="Menu Icon">
+                        <p>Menu</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

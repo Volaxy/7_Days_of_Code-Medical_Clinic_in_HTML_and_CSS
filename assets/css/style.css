@@ -6,27 +6,39 @@
 /*============================== Configurations ==============================*/
 :root {
     /* COLORS */
-    --athens-Gray: #EFF0F4;
-    --black: #000;
-    --magnolia: #F8F4FF;
-    --silver-chalice: #A3A3A3;
-    --tundora: #464646;
-    --tundora-10: #4545451a;
-    --mercury: #dddddd;
-    --white: #fff;
-    --texas-rose: #FFB050;
-    --gallery: #ECECEC;
-    --dodger-blue: #4894FF;
+    --black: hsl(0, 0%, 0%);
+    --black-60: hsla(0, 0%, 0%, 0.6);
+    --black-35: hsla(0, 0%, 0%, 0.35);
+    --black-06: hsla(0, 0%, 0%, 0.06);
+    --tundora: hsl(0, 0%, 27%);
+    --tundora-10: hsla(0, 0%, 27%, 0.1);
+    --silver-chalice: hsl(0, 0%, 64%);
+    --mercury-40: hsla(0, 0%, 87%, 0.4);
+    --gallery: hsl(0, 0%, 93% );
+    --white: hsl(0, 0%, 100%);
+    --texas-rose: hsl(33, 100%, 66%);
+    --dodger-blue: hsl(215, 100%, 64%);
+    --dodger-blue-50: hsla(215, 100%, 64%, 0.5);
+    --athens-Gray: hsl(228, 19%, 95%);
+    --magnolia: hsl(262, 100%, 98%);
 
     /* BACKGROUNDS */
-    --chat-button-background: var(--mercury);
+    --chat-button-background: var(--mercury-40);
     --button-call-of-video-background: var(--texas-rose);
     --button-address-background: var(--dodger-blue);
+    --button-new-appointment-background: var(--dodger-blue);
+    --new-appointment-background: var(--black-60);
+    --new-appointment-text-background: var(--white);
+    --footer-background: var(--white);
 
     /* BORDERS */
     --hr-border-color: var(--tundora-10);
-    --meeting-box-shadow: var(--black);
     --audio-call-button-border-color: var(--gallery);
+    
+    /* BOX-SHADOW */
+    --meeting-box-shadow-color: var(--black-35);
+    --footer-box-shadow-color: var(--black-06);
+    --button-new-appointment-box-shadow-color: var(--dodger-blue-50);
 
     /* TEXTS */
     --title-text-color: var(--tundora);
@@ -42,12 +54,15 @@
     --meeting-padding: 1rem;
 }
 
+/* ANIMATIONS */
+@keyframes new-appointment-buttons-animation {
+    to {
+        transform: translateX(0%);
+    }
+}
+
 /*============================== Generic Elements ==============================*/
 body {
-    width: 90%;
-
-    margin: auto;
-
     font-family: var(--main-font);
     font-size: 16px;
 }
@@ -71,6 +86,8 @@ h6 {
     border-radius: 5px;
 
     text-align: center;
+
+    cursor: pointer;
 }
 
     .button--video-call {
@@ -92,13 +109,31 @@ h6 {
     }
 
 /*============================== Page - Top to Bottom ==============================*/
+/* NEW APPOINTMENT BACKGROUND */
+/* Background when the "new appointment" button is clicked */
+.new-appointment-background {
+    background-color: var(--new-appointment-background);
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+
+    display: none;
+}
+
+    .new-appointment-background--active {
+        display: block;
+    }
+
 /* MAIN PROFILE */
 .header {
     display: flex;
     align-items: center;
     gap: 1rem;
 
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
 }
 
     .header__profile {
@@ -116,19 +151,79 @@ h6 {
         color: var(--detail-text-color);
     }
 
+.main {
+    padding: 1rem;
+}
+
+/* NEW APPOINTMENT */
+.new-appointment {
+    position: fixed;
+    right: 1rem;
+    bottom: 6rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 1rem;
+
+    margin-left: 1rem;
+}
+
+    .new-appointment__appointment {
+        transform: translateX(106%);
+    }
+    
+        .new-appointment__appointment--animated {
+            animation: new-appointment-buttons-animation 0.25s cubic-bezier(0.42, 0, 0.51, 1.19) forwards;
+        }
+
+
+    .new-appointment__appointment {
+        max-width: fit-content;
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+        .new-appointment__button {
+            background-color: var(--button-new-appointment-background);
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            box-shadow: 0px 4px 16px var(--button-new-appointment-box-shadow-color);
+            border-radius: 50%;
+        }
+
+        .new-appointment__text {
+            background-color: var(--new-appointment-text-background);
+
+            border-radius: 15px;
+            padding: 0.5rem;
+        }
+
 /* APPOINTMENTS */
 .appointments-day {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 
     font-size: 1.75rem;
 }
 
 .meeting {
-    margin-bottom: 1rem;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px var(--meeting-box-shadow);
+    box-shadow: 1px 1px 5px var(--meeting-box-shadow-color);
     padding: var(--meeting-padding);
 }
+
+    .meeting:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 
     .meeting__header {
         display: flex;
@@ -158,8 +253,8 @@ h6 {
         .meeting__chat-button {
             background-color: var(--chat-button-background);
 
-            width: 50px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             
             display: flex;
             justify-content: center;
@@ -194,6 +289,38 @@ h6 {
 
         .meeting__buttons > * {
             flex-grow: 1;
+        }
+
+/* FOOTER */
+.footer {
+    background-color: var(--footer-background);
+
+    position: sticky;
+    bottom: 0;
+
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0px -4px 8px var(--footer-box-shadow-color);
+    padding: 1rem 1.5rem;
+}
+
+    .footer__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+        .footer__link {
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.25rem;
+
+            color: var(--detail-text-color);
+            font-size: 0.8rem;
+            text-decoration: none;
         }
 
 /* RESPONSIVE LAYOUTS */
