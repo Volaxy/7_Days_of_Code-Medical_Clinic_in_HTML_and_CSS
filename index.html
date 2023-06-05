@@ -55,287 +55,276 @@
         <!-- APPOINTMENTS -->
         <!-- TODAY -->
         <section>
-            <h2 class="appointments-day">Hoje</h2>
+            <h2 class="appointments-day appointments-day--no-margin-top">Hoje</h2>
 
-            <!-- 1st Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-2.jpg" alt="Luciana`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Luciana Dias</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
-                    </div>
-
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
-
-                <hr class="meeting__row">
-
-                <section>
-                    <p class="meeting__time"><time datetime="14:00">14:00</time> - <time datetime="15:00">15:00</time> (<time datetime="PT1H">1 hora</time>)</p>
-
-                    <div class="meeting__buttons">
-                        <button class="button button--video-call">Ligar por vídeo</button>
-                        <button class="button button--audio-call">Ligar por áudio</button>
-                    </div>
-                </section>
-            </article>
-            
-            <!-- 2nd Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-3.jpg" alt="Larissa`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Larissa Santana</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
-                    </div>
-
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
+            <div class="day-meetings">
+                <!-- 1st Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-2.jpg" alt="Luciana`s profile">
                 
-                <hr class="meeting__row">
-                
-                <section>
-                    <p class="meeting__time"><time datetime="16:00">16:00</time> - <time datetime="17:00">17:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Luciana Dias</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        </div>
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
                     
-                    <div class="meeting__buttons">
-                        <button class="button button--address">Ver endereço</button>
-                    </div>
-                </section>
-            </article>
+                    <hr class="meeting__row">
 
-            <!-- 3rd Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-4.jpg" alt="Marcos`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Marcos Correia</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
-                    </div>
-            
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
-            
-                <hr class="meeting__row">
-            
-                <section>
-                    <p class="meeting__time"><time datetime="17:20">17:20</time> - <time datetime="18:00">18:00</time> (<time datetime="PT0H40M">40 minutos</time>)</p>
-            
-                    <div class="meeting__buttons">
-                        <button class="button button--video-call">Ligar por vídeo</button>
-                        <button class="button button--audio-call">Ligar por áudio</button>
-                    </div>
-                </section>
-            </article>
+                    <section class="meeting__footer">
+                        <p class="meeting__time"><time datetime="14:00">14:00</time> - <time datetime="15:00">15:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                        <div class="meeting__buttons">
+                            <button class="button button--video-call">Ligar por vídeo</button>
+                            <button class="button button--audio-call">Ligar por áudio</button>
+                        </div>
+                    </section>
+                </article>
+                
+                <!-- 2nd Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-3.jpg" alt="Larissa`s profile">
+                
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Larissa Santana</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        </div>
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                
+                    <hr class="meeting__row">
+                
+                    <section class="meeting__footer">
+                        <p class="meeting__time"><time datetime="16:00">16:00</time> - <time datetime="17:00">17:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                
+                        <div class="meeting__buttons">
+                            <button class="button button--address">Ver endereço</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- 3rd Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-4.jpg" alt="Marcos`s profile">
+                
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Marcos Correia</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        </div>
+                
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                
+                    <hr class="meeting__row">
+                
+                    <section class="meeting__footer">
+                        <p class="meeting__time"><time datetime="17:20">17:20</time> - <time datetime="18:00">18:00</time> (<time datetime="PT0H40M">40 minutos</time>)</p>
+                
+                        <div class="meeting__buttons">
+                            <button class="button button--video-call">Ligar por vídeo</button>
+                            <button class="button button--audio-call">Ligar por áudio</button>
+                        </div>
+                    </section>
+                </article>
+            </div>
         </section>
 
         <!-- TOMORROW -->
         <section>
             <h2 class="appointments-day">Amanhã</h2>
 
-            <!-- 1st Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-5.jpg" alt="Clara`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Clara Lemos</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
-                    </div>
-
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
-
-                <hr class="meeting__row">
-
-                <section>
-                    <p class="meeting__time"><time datetime="18:00">18:00</time> - <time datetime="19:00">19:00</time> (<time datetime="PT1H">1 hora</time>)</p>
-
-                    <div class="meeting__buttons">
-                        <button class="button button--address">Ver endereço</button>
-                    </div>
-                </section>
-            </article>
-            
-            <!-- 2nd Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-2.jpg" alt="Luciana`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Luciana Dias</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
-                    </div>
-            
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
+            <div class="day-meetings">
+                <!-- 1st Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-5.jpg" alt="Clara`s profile">
                 
-                <hr class="meeting__row">
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Clara Lemos</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        </div>
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                    <hr class="meeting__row">
+                    <section>
+                        <p class="meeting__time"><time datetime="18:00">18:00</time> - <time datetime="19:00">19:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                        <div class="meeting__buttons">
+                            <button class="button button--address">Ver endereço</button>
+                        </div>
+                    </section>
+                </article>
                 
-                <section>
-                    <p class="meeting__time"><time datetime="14:00">14:00</time> - <time datetime="15:00">15:00</time> (<time datetime="PT1H">1 hora</time>)</p>
-            
-                    <div class="meeting__buttons">
-                        <button class="button button--video-call">Ligar por vídeo</button>
-                        <button class="button button--audio-call">Ligar por áudio</button>
-                    </div>
-                </section>
-            </article>
-
-            <!-- 3rd Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-4.jpg" alt="Marcos`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Marcos Correia</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
-                    </div>
-            
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
-            
-                <hr class="meeting__row">
-            
-                <section>
-                    <p class="meeting__time"><time datetime="17:20">17:20</time> - <time datetime="18:00">18:00</time> (<time datetime="PT0H40M">40 minutos</time>)</p>
-            
-                    <div class="meeting__buttons">
-                        <button class="button button--video-call">Ligar por vídeo</button>
-                        <button class="button button--audio-call">Ligar por áudio</button>
-                    </div>
-                </section>
-            </article>
-
-            <!-- 4th Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-3.jpg" alt="Larissa`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Larissa Santana</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
-                    </div>
-
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
+                <!-- 2nd Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-2.jpg" alt="Luciana`s profile">
                 
-                <hr class="meeting__row">
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Luciana Dias</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        </div>
                 
-                <section>
-                    <p class="meeting__time"><time datetime="16:00">16:00</time> - <time datetime="17:00">17:00</time> (<time datetime="PT1H">1 hora</time>)</p>
-                    
-                    <div class="meeting__buttons">
-                        <button class="button button--address">Ver endereço</button>
-                    </div>
-                </section>
-            </article>
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                
+                    <hr class="meeting__row">
+                
+                    <section>
+                        <p class="meeting__time"><time datetime="14:00">14:00</time> - <time datetime="15:00">15:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                
+                        <div class="meeting__buttons">
+                            <button class="button button--video-call">Ligar por vídeo</button>
+                            <button class="button button--audio-call">Ligar por áudio</button>
+                        </div>
+                    </section>
+                </article>
+                <!-- 3rd Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-4.jpg" alt="Marcos`s profile">
+                
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Marcos Correia</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        </div>
+                
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                
+                    <hr class="meeting__row">
+                
+                    <section>
+                        <p class="meeting__time"><time datetime="17:20">17:20</time> - <time datetime="18:00">18:00</time> (<time datetime="PT0H40M">40 minutos</time>)</p>
+                
+                        <div class="meeting__buttons">
+                            <button class="button button--video-call">Ligar por vídeo</button>
+                            <button class="button button--audio-call">Ligar por áudio</button>
+                        </div>
+                    </section>
+                </article>
+                <!-- 4th Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-3.jpg" alt="Larissa`s profile">
+                
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Larissa Santana</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        </div>
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                
+                    <hr class="meeting__row">
+                
+                    <section>
+                        <p class="meeting__time"><time datetime="16:00">16:00</time> - <time datetime="17:00">17:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                
+                        <div class="meeting__buttons">
+                            <button class="button button--address">Ver endereço</button>
+                        </div>
+                    </section>
+                </article>
+            </div>
         </section>
 
         <!-- WEDNESDAY -->
         <section>
             <h2 class="appointments-day">Quarta-feira</h2>
 
-            <!-- 1st Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-5.jpg" alt="Clara`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Clara Lemos</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
-                    </div>
-
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
-
-                <hr class="meeting__row">
-
-                <section>
-                    <p class="meeting__time"><time datetime="18:00">18:00</time> - <time datetime="19:00">19:00</time> (<time datetime="PT1H">1 hora</time>)</p>
-
-                    <div class="meeting__buttons">
-                        <button class="button button--address">Ver endereço</button>
-                    </div>
-                </section>
-            </article>
-            
-            <!-- 2nd Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-2.jpg" alt="Luciana`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Luciana Dias</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
-                    </div>
-            
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
+            <div class="day-meetings">
+                <!-- 1st Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-5.jpg" alt="Clara`s profile">
                 
-                <hr class="meeting__row">
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Clara Lemos</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        </div>
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                    <hr class="meeting__row">
+                    <section>
+                        <p class="meeting__time"><time datetime="18:00">18:00</time> - <time datetime="19:00">19:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                        <div class="meeting__buttons">
+                            <button class="button button--address">Ver endereço</button>
+                        </div>
+                    </section>
+                </article>
                 
-                <section>
-                    <p class="meeting__time"><time datetime="14:00">14:00</time> - <time datetime="15:00">15:00</time> (<time datetime="PT1H">1 hora</time>)</p>
-            
-                    <div class="meeting__buttons">
-                        <button class="button button--video-call">Ligar por vídeo</button>
-                        <button class="button button--audio-call">Ligar por áudio</button>
-                    </div>
-                </section>
-            </article>
-
-            <!-- 3rd Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-4.jpg" alt="Marcos`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Marcos Correia</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
-                    </div>
-            
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
-            
-                <hr class="meeting__row">
-            
-                <section>
-                    <p class="meeting__time"><time datetime="17:20">17:20</time> - <time datetime="18:00">18:00</time> (<time datetime="PT0H40M">40 minutos</time>)</p>
-            
-                    <div class="meeting__buttons">
-                        <button class="button button--video-call">Ligar por vídeo</button>
-                        <button class="button button--audio-call">Ligar por áudio</button>
-                    </div>
-                </section>
-            </article>
-
-            <!-- 4th Client -->
-            <article class="meeting">
-                <header class="meeting__header">
-                    <img class="meeting__profile" src="assets/images/profile-3.jpg" alt="Larissa`s profile">
-                    
-                    <div class="meeting__informations">
-                        <h3 class="meeting__informations__client-name">Larissa Santana</h3>
-                        <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
-                    </div>
-
-                    <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
-                </header>
+                <!-- 2nd Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-2.jpg" alt="Luciana`s profile">
                 
-                <hr class="meeting__row">
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Luciana Dias</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        </div>
                 
-                <section>
-                    <p class="meeting__time"><time datetime="16:00">16:00</time> - <time datetime="17:00">17:00</time> (<time datetime="PT1H">1 hora</time>)</p>
-                    
-                    <div class="meeting__buttons">
-                        <button class="button button--address">Ver endereço</button>
-                    </div>
-                </section>
-            </article>
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                
+                    <hr class="meeting__row">
+                
+                    <section>
+                        <p class="meeting__time"><time datetime="14:00">14:00</time> - <time datetime="15:00">15:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                
+                        <div class="meeting__buttons">
+                            <button class="button button--video-call">Ligar por vídeo</button>
+                            <button class="button button--audio-call">Ligar por áudio</button>
+                        </div>
+                    </section>
+                </article>
+                <!-- 3rd Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-4.jpg" alt="Marcos`s profile">
+                
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Marcos Correia</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-camera-icon.svg" alt="Camera icon"> Consulta Remota</p>
+                        </div>
+                
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                
+                    <hr class="meeting__row">
+                
+                    <section>
+                        <p class="meeting__time"><time datetime="17:20">17:20</time> - <time datetime="18:00">18:00</time> (<time datetime="PT0H40M">40 minutos</time>)</p>
+                
+                        <div class="meeting__buttons">
+                            <button class="button button--video-call">Ligar por vídeo</button>
+                            <button class="button button--audio-call">Ligar por áudio</button>
+                        </div>
+                    </section>
+                </article>
+                <!-- 4th Client -->
+                <article class="meeting">
+                    <header class="meeting__header">
+                        <img class="meeting__profile" src="assets/images/profile-3.jpg" alt="Larissa`s profile">
+                
+                        <div class="meeting__informations">
+                            <h3 class="meeting__informations__client-name">Larissa Santana</h3>
+                            <p class="meeting__informations__meet-type"><img src="assets/images/icons/appointment-pin-address-icon.svg" alt="Pin address icon"> Consulta no local</p>
+                        </div>
+                        <button class="meeting__chat-button"><img class="meeting__chat-button__icon" src="assets/images/icons/chat-icon.svg" alt="Speech bubble icon"></button>
+                    </header>
+                
+                    <hr class="meeting__row">
+                
+                    <section>
+                        <p class="meeting__time"><time datetime="16:00">16:00</time> - <time datetime="17:00">17:00</time> (<time datetime="PT1H">1 hora</time>)</p>
+                
+                        <div class="meeting__buttons">
+                            <button class="button button--address">Ver endereço</button>
+                        </div>
+                    </section>
+                </article>
+            </div>
         </section>
     </main>
 

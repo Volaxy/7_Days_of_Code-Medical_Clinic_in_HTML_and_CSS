@@ -34,6 +34,7 @@
     /* BORDERS */
     --hr-border-color: var(--tundora-10);
     --audio-call-button-border-color: var(--gallery);
+    --new-appointment-button-border-color: var(--black-06);
     
     /* BOX-SHADOW */
     --meeting-box-shadow-color: var(--black-35);
@@ -62,6 +63,10 @@
 }
 
 /*============================== Generic Elements ==============================*/
+html { 
+    min-width: 320px;
+}
+
 body {
     font-family: var(--main-font);
     font-size: 16px;
@@ -197,6 +202,7 @@ h6 {
             justify-content: center;
             align-items: center;
             
+            border: 2px solid var(--new-appointment-button-border-color);
             box-shadow: 0px 4px 16px var(--button-new-appointment-box-shadow-color);
             border-radius: 50%;
         }
@@ -214,6 +220,10 @@ h6 {
 
     font-size: 1.75rem;
 }
+
+    .appointments-day--no-margin-top {
+        margin-top: 0;
+    }
 
 .meeting {
     border-radius: 10px;
@@ -324,3 +334,34 @@ h6 {
         }
 
 /* RESPONSIVE LAYOUTS */
+/* TABLET */
+@media screen and (min-width: 768px) {
+    /* APPOINTMENTS */
+    .day-meetings {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .meeting:not(:last-child) {
+        margin-bottom: 0px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    /* APPOINTMENTS */
+    .day-meetings {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+        .meeting {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+        }
+
+            .meeting__footer {
+                display: grid;
+                grid-template-rows: auto 1fr;
+            }
+}
