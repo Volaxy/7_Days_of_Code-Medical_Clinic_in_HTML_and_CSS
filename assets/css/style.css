@@ -9,6 +9,7 @@
     --black: hsl(0, 0%, 0%);
     --black-60: hsla(0, 0%, 0%, 0.6);
     --black-35: hsla(0, 0%, 0%, 0.35);
+    --black-15: hsla(0, 0%, 0%, 0.15);
     --black-06: hsla(0, 0%, 0%, 0.06);
     --tundora: hsl(0, 0%, 27%);
     --tundora-10: hsla(0, 0%, 27%, 0.1);
@@ -38,6 +39,7 @@
     
     /* BOX-SHADOW */
     --meeting-box-shadow-color: var(--black-35);
+    --footer-box-shadow-color--desktop: var(--black-15);
     --footer-box-shadow-color: var(--black-06);
     --button-new-appointment-box-shadow-color: var(--dodger-blue-50);
 
@@ -346,6 +348,13 @@ h6 {
     .meeting:not(:last-child) {
         margin-bottom: 0px;
     }
+
+    /* FOOTER */
+    .footer__list {
+        max-width: 50rem;
+
+        margin: auto;
+    }
 }
 
 /* DESKTOP */
@@ -364,4 +373,46 @@ h6 {
                 display: grid;
                 grid-template-rows: auto 1fr;
             }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1100px) {
+    .main {
+        padding: 0;
+    }
+
+    .main-grid {
+        position: relative;
+
+        display: grid;
+        grid-template-columns: 1fr 7rem;
+        gap: 1rem;
+
+        padding: 1rem;
+    }
+
+    /* NEW APPOINTMENT */
+    .new-appointment {
+        bottom: 1rem;
+
+        z-index: 1;
+    }
+
+    /* FOOTER */
+    .footer {
+        height: fit-content;
+
+        position: sticky;
+        top: 1rem;
+
+        margin-top: 3.7rem;
+        border-radius: 12px;
+        box-shadow: 0px 0px 8px var(--footer-box-shadow-color--desktop);
+        padding: 1rem;
+    }
+
+        .footer__list {
+            flex-direction: column;
+            gap: 4rem;
+        }
 }
