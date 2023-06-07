@@ -174,13 +174,19 @@ h6 {
     gap: 1rem;
 
     margin-left: 1rem;
+
+    z-index: 1;
 }
 
     .new-appointment__appointment {
+        position: absolute;
+
         transform: translateX(106%);
     }
     
         .new-appointment__appointment--animated {
+            position: static;
+
             animation: new-appointment-buttons-animation 0.25s cubic-bezier(0.42, 0, 0.51, 1.19) forwards;
         }
 
