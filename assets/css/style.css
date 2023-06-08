@@ -86,6 +86,10 @@ h6 {
     font-weight: bold;
 }
 
+button {
+    cursor: pointer;
+}
+
 /*============================== Generic Classes ==============================*/
 .button {
     padding: 1rem;
@@ -94,7 +98,7 @@ h6 {
 
     text-align: center;
 
-    cursor: pointer;
+    transition: 0.2s all;
 }
 
     .button--video-call {
@@ -103,11 +107,19 @@ h6 {
         color: var(--white-button-text-color);
     }
 
+        .button--video-call:hover {
+            background-color: color-mix(in srgb, var(--button-call-of-video-background), var(--black) 10%);
+        }
+
     .button--audio-call {
         background-color: transparent;
 
         border: 1px solid var(--audio-call-button-border-color);
     }
+
+        .button--audio-call:hover {
+            background-color: color-mix(in srgb, var(--audio-call-button-border-color), var(--black) 10%);
+        }
 
     .button--address {
         background-color: var(--button-address-background);
@@ -115,25 +127,11 @@ h6 {
         color: var(--white-button-text-color);
     }
 
+        .button--address:hover {
+            background-color: color-mix(in srgb, var(--button-address-background), var(--black) 10%);
+        }
+
 /*============================== Page - Top to Bottom ==============================*/
-/* NEW APPOINTMENT BACKGROUND */
-/* Background when the "new appointment" button is clicked */
-.new-appointment-background {
-    background-color: var(--new-appointment-background);
-
-    width: 100vw;
-    height: 100vh;
-
-    position: fixed;
-    top: 0;
-
-    display: none;
-}
-
-    .new-appointment-background--active {
-        display: block;
-    }
-
 /* MAIN PROFILE */
 .header {
     display: flex;
@@ -215,6 +213,10 @@ h6 {
             border-radius: 50%;
         }
 
+            .new-appointment__button:hover {
+                background-color: color-mix(in srgb, var(--button-new-appointment-background), var(--black) 20%);
+            }
+
         .new-appointment__text {
             background-color: var(--new-appointment-text-background);
 
@@ -281,7 +283,13 @@ h6 {
             border: none;
             border-radius: 50%;
             padding: 0.5rem;
+
+            transition: 0.2s all;
         }
+
+            .meeting__chat-button:hover {
+                background-color: color-mix(in srgb, var(--chat-button-background), var(--black) 10%);
+            }
 
             .meeting__chat-button__icon {
                 width: 75%;
@@ -340,6 +348,24 @@ h6 {
             font-size: 0.8rem;
             text-decoration: none;
         }
+
+/* NEW APPOINTMENT BACKGROUND */
+/* Background when the "new appointment" button is clicked */
+.new-appointment-background {
+    background-color: var(--new-appointment-background);
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+
+    display: none;
+}
+
+    .new-appointment-background--active {
+        display: block;
+    }
 
 /* RESPONSIVE LAYOUTS */
 /* TABLET */
@@ -414,7 +440,7 @@ h6 {
         margin-top: 3.7rem;
         border-radius: 12px;
         box-shadow: 0px 0px 8px var(--footer-box-shadow-color--desktop);
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
 
         .footer__list {
