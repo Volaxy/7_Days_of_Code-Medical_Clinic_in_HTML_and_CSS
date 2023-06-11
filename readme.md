@@ -9,11 +9,8 @@
 ## :bookmark_tabs: Tópicos
 [1. Descrição do Projeto](#descrição-do-projeto)<br>
 [2. Linguagens Usadas](#linguagens-usadas)<br>
-[3. Funcionalidades](#funcionalidades)<br>
-[4. Deploy da Aplicação](#deploy-da-aplicação-dash)<br>
-[5. Pré-Requisitos](#pré-requisitos)<br>
-[6. Como Rodar a Aplicação](#como-rodar-a-aplicação-arrow_forward)<br>
-[7. Licença](#licença)<br>
+[3. Deploy da Aplicação](#deploy-da-aplicação-dash)<br>
+[4. Licença](#licença)<br>
 
 ## :clipboard: Descrição do projeto
 <p align="justify">
